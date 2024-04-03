@@ -170,12 +170,12 @@ const CodeEditor = ({ width, height }) => {
           >
             Run
           </button>
-          <button
+          {/* <button
             onClick={handleSubmit}
             className="bg-green-500 text-white hover:bg-green-600 rounded-md px-4 py-1"
           >
             Submit
-          </button>
+          </button> */}
         </div>
       </div>
       <Editor
