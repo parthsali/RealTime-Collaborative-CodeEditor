@@ -4,23 +4,7 @@ import { io } from "socket.io-client";
 
 import { useData } from "../context/DataContext";
 
-const languages = [
-  "javascript",
-  "typescript",
-  "css",
-  "html",
-  "json",
-  "python",
-  "java",
-  "php",
-  "ruby",
-  "c",
-  "csharp",
-  "cpp",
-  "go",
-  "lua",
-  "swift",
-];
+const languages = ["javascript", "python", "java", "cpp"];
 
 const CodeEditor = ({ width, height }) => {
   const editorRef = useRef(null);
