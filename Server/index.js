@@ -14,6 +14,7 @@ const io = new Server(8000, {
 io.on('connection', (socket) => {
     console.log('User connected', socket.id);
     socket.on('code-change', (data) => {
+        console.log('Code change', data);
         socket.broadcast.emit('code-change', data);
     });
 
